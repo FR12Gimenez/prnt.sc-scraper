@@ -100,7 +100,6 @@ def load_url(url):
             return load_url(newurl)
         
         save_img(img, f"{url[-6:]}{file_ext}", path)
-        print(f"{Fore.GREEN}[+] Success.\n")
         
     except Exception as e:
         print(f"{Fore.RED}[-] Error loading URL: {e}")
